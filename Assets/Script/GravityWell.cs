@@ -8,10 +8,22 @@ public class GravityWell : MonoBehaviour
 
     public List<GameObject> SolarObjects = new List<GameObject>();
 
-    
+    private CircleCollider2D _circleCollider2D;
+
+    private void Start()
+    {
+        CircleCollider2D[] circleCollider2D = GetComponents<CircleCollider2D>();
+        foreach (CircleCollider2D collider2D in circleCollider2D)
+            if (collider2D.isTrigger)
+            {
+                _circleCollider2D = collider2D;
+                break;
+            }
+    }
 
     private void FixedUpdate()
     {
+       
         Gravity();
     }
 
@@ -48,7 +60,18 @@ public class GravityWell : MonoBehaviour
         SolarObjects.Remove(collision.gameObject);
     }
 
+    void OnDrawGizmos()
+    {
 
+        if (_circleCollider2D != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, _circleCollider2D.radius);
+        }
+       
+
+
+    }
 
 
 

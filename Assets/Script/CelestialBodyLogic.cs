@@ -7,6 +7,11 @@ public class CelestialBodyLogic : MonoBehaviour
     [Header("Mass")]
     public int Mass = 0;
 
+    public int MaxOrbitingObjects = 0;
+
+
+
+
     public CelestialBodyType Type = CelestialBodyType.Astroid;
     public GravityWell _gravityWell;
 
@@ -64,7 +69,7 @@ public class CelestialBodyLogic : MonoBehaviour
            
 
 
-            distance += 2;
+            distance += 1;
         }
 
 

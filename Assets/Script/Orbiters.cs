@@ -20,7 +20,12 @@ public class Orbiters : MonoBehaviour
     private Rigidbody2D _rb; // The Rigidbody component of the object
     private float _angle; // The current angle of the orbit
 
-   
+    public Color GizmoColor = Color.white;
+
+
+
+    public float lerpTime = 1f; // the time it should take to move to the target position
+    public float currentLerpTime; // a counter to track the time elapsed since 
 
     void Start()
     {
@@ -76,15 +81,44 @@ public class Orbiters : MonoBehaviour
         float y = Mathf.Cos(_angle) * Distance;
         Vector3 orbitPosition = new Vector3(x, y, 0);
 
-        _rb.MovePosition(Vector2.MoveTowards(transform.position, Center.position + orbitPosition, (OrbitSpeed * AlignSpeed) * Time.deltaTime));
-        
+        OrbitPositionLogic(orbitPosition);
+
+
+        //_rb.MovePosition(Vector2.Lerp(transform.position, Center.position + orbitPosition, (OrbitSpeed * AlignSpeed) * Time.deltaTime));
         //_rb.MovePosition(Center.position + orbitPosition);
+
 
 
         Debug.DrawLine(Center.position + orbitPosition, Center.position); 
     }
 
-    
+    void OrbitPositionLogic(Vector3 orbitPosition)
+    {
+        // Increment the counter by the elapsed time since the last frame
+        currentLerpTime += Time.deltaTime;
+        if (currentLerpTime > lerpTime)
+        {
+            // If the elapsed time exceeds the desired lerp time, set the object's position to the target position
+            _rb.MovePosition(Center.position + orbitPosition);
+        }
+        else
+        {
+            // Otherwise, lerp the object's position towards the target position
+            float t = currentLerpTime / lerpTime;
+            transform.position = Vector3.Lerp(transform.position, Center.position + orbitPosition, t);
+        }
+    }
 
+
+    void OnDrawGizmos()
+    {
+        // draw a wireframe sphere at the transform's position with the specified radius and color
+        
+        if (Center != null)
+        {
+            Gizmos.color = GizmoColor;
+            Gizmos.DrawWireSphere(Center.position, Distance);
+        }
+    }
 }
 
