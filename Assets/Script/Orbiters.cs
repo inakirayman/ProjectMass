@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class Orbiters : MonoBehaviour
 {
-
-   
-
     public Transform Center; // The object to orbit around
     public float Distance = 10f; // The distance of the orbit
+    private float _privouseDistance = 0;
     public float OrbitSpeed = 10f; // The speed of the orbit
     public float AlignSpeed = 15f;
 
     public bool DoOnce = false;
-    
+    private bool _absorb = false;
 
 
-    private bool IsAligned = false;
     private Rigidbody2D _rb; // The Rigidbody component of the object
     private float _angle; // The current angle of the orbit
 
@@ -25,7 +22,7 @@ public class Orbiters : MonoBehaviour
 
 
     public float lerpTime = 1f; // the time it should take to move to the target position
-    public float currentLerpTime; // a counter to track the time elapsed since 
+    private float _currentLerpTime; // a counter to track the time elapsed since 
 
     void Start()
     {
@@ -55,7 +52,13 @@ public class Orbiters : MonoBehaviour
         }
 
 
+        if(Distance != _privouseDistance)
+        {
+            _currentLerpTime = 0;
+            _privouseDistance = Distance;
+        }
 
+        
 
 
     }
@@ -63,11 +66,21 @@ public class Orbiters : MonoBehaviour
     
     void FixedUpdate()
     {
-
-        if (Center != null)
+        _currentLerpTime += Time.deltaTime;
+        if (Center != null && !_absorb)
         {
             OrbitLogic();
         }
+
+        if ( _absorb)
+        {
+            float t = _currentLerpTime / 0.5f;
+            _rb.MovePosition(Vector3.Lerp(transform.position, Center.position, t));
+
+            if (_currentLerpTime > 0.5f)
+                gameObject.SetActive(false);
+        }
+       
 
     }
 
@@ -84,10 +97,6 @@ public class Orbiters : MonoBehaviour
         OrbitPositionLogic(orbitPosition);
 
 
-        //_rb.MovePosition(Vector2.Lerp(transform.position, Center.position + orbitPosition, (OrbitSpeed * AlignSpeed) * Time.deltaTime));
-        //_rb.MovePosition(Center.position + orbitPosition);
-
-
 
         Debug.DrawLine(Center.position + orbitPosition, Center.position); 
     }
@@ -95,8 +104,8 @@ public class Orbiters : MonoBehaviour
     void OrbitPositionLogic(Vector3 orbitPosition)
     {
         // Increment the counter by the elapsed time since the last frame
-        currentLerpTime += Time.deltaTime;
-        if (currentLerpTime > lerpTime)
+        
+        if (_currentLerpTime > lerpTime)
         {
             // If the elapsed time exceeds the desired lerp time, set the object's position to the target position
             _rb.MovePosition(Center.position + orbitPosition);
@@ -104,9 +113,17 @@ public class Orbiters : MonoBehaviour
         else
         {
             // Otherwise, lerp the object's position towards the target position
-            float t = currentLerpTime / lerpTime;
-            transform.position = Vector3.Lerp(transform.position, Center.position + orbitPosition, t);
+            float t = _currentLerpTime / lerpTime;
+            _rb.MovePosition(Vector3.Lerp(transform.position, Center.position + orbitPosition, t));
         }
+    }
+
+
+    public void AbsorbSatellite()
+    {
+        gameObject.layer = 6;
+        _currentLerpTime = 0;
+        _absorb = true;
     }
 
 
