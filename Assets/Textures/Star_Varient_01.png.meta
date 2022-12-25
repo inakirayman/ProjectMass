@@ -1,0 +1,827 @@
+fileFormatVersion: 2
+guid: e7d0c5918897d8045ad88f9ca046d22c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Star_Varient_01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 967.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f146f086c886f4cb4b2e2944f6f85d
+      internalID: 851909347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_1
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 967.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f6b162c1a022743bc01c751fd9d926
+      internalID: -946621861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_2
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 967.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d4ce40818832d498ad1cc793ae6301
+      internalID: -1266522729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_3
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 967.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f548be0fcfb214e94f4cb08fe42604
+      internalID: 60149060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_4
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 967.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47046a65027288d4787337f7d6bb4302
+      internalID: -1040376518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_5
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 967.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd398f2d5cdc8f4796d1344065fd8b0
+      internalID: -1235021372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_6
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 967.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889071385bf92c44b97e83cc6fcbbaa7
+      internalID: -293068084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_7
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 967.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ef338237c6dd04c9331bae2f456ab4
+      internalID: -921868410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 645.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064af2b404b7ddd44be0a12f835ec34c
+      internalID: -603768900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_9
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 645.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd435cd898d08e4aa1b7de350ce21fd
+      internalID: 976361692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_10
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 645.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db48e49982cfd3d4a891e31462d40d30
+      internalID: -678026067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_11
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 645.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa58e5b54abf334896b05930d416283
+      internalID: 700191558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_12
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 645.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1c9cd415bdecd459f42666876b1a90
+      internalID: 913701922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_13
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 645.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dab8d45132c2d4f9b690ee2c6517de
+      internalID: -143685290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_14
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 645.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995efafbb6dd61c4da3a3aadcd1d65a0
+      internalID: 1436938211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_15
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 645.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367104b964ad86f4ab1d8130e29fff38
+      internalID: -1985927643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 323.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c689f9e5e96dc41b21a5b2f6ea63b2
+      internalID: 253200691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_17
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 323.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05731a7416e15f24d9313e88cf1a2c54
+      internalID: 1790104284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_18
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 323.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc88fe65ebacb0419cebd3c29831faa
+      internalID: -1950122837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_19
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 323.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a83daa35cad8bf469b41b1c40c7982f
+      internalID: -108084405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_20
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 323.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7abda9469d0e749886491ea0ee6213
+      internalID: -296744823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_21
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 323.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377367aac54d9ea4c811b97f38eca541
+      internalID: 912545956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_22
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 323.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7e9af2a499e13428850ca086c58e3b
+      internalID: -1705695371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_23
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 323.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104b04bf828121346a8ebf15d571d6dc
+      internalID: 241174854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599d65706dcd5954b9d8a4c1c0c4aec7
+      internalID: -334079732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_25
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3675114afccc9664f914fc439b307d02
+      internalID: -1749765902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_26
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928b3272b14a97444bec7f61cef2dd4f
+      internalID: -1253094026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_27
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9f827db76a40e448432f318ac2cd9c
+      internalID: 1934990695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_28
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87cec97807956aa46900b46f506b6ff8
+      internalID: -105350589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_29
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 1.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb34b9fed4b366478e3497f62e7b096
+      internalID: -1826830247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_30
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 1.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88a0532a8ea60541aa220367bf3d3b6
+      internalID: -1566535420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star_Varient_01_31
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 1.5
+        width: 322.25
+        height: 322.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded2d5b7f647943468aa6e102ef87a79
+      internalID: 470462442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Star_Varient_01_9: 976361692
+      Star_Varient_01_17: 1790104284
+      Star_Varient_01_15: -1985927643
+      Star_Varient_01_13: -143685290
+      Star_Varient_01_21: 912545956
+      Star_Varient_01_19: -108084405
+      Star_Varient_01_27: 1934990695
+      Star_Varient_01_29: -1826830247
+      Star_Varient_01_20: -296744823
+      Star_Varient_01_10: -678026067
+      Star_Varient_01_14: 1436938211
+      Star_Varient_01_0: 851909347
+      Star_Varient_01_4: -1040376518
+      Star_Varient_01_6: -293068084
+      Star_Varient_01_31: 470462442
+      Star_Varient_01_30: -1566535420
+      Star_Varient_01_22: -1705695371
+      Star_Varient_01_2: -1266522729
+      Star_Varient_01_3: 60149060
+      Star_Varient_01_5: -1235021372
+      Star_Varient_01_16: 253200691
+      Star_Varient_01_12: 913701922
+      Star_Varient_01_25: -1749765902
+      Star_Varient_01_18: -1950122837
+      Star_Varient_01_24: -334079732
+      Star_Varient_01_11: 700191558
+      Star_Varient_01_8: -603768900
+      Star_Varient_01_1: -946621861
+      Star_Varient_01_23: 241174854
+      Star_Varient_01_28: -105350589
+      Star_Varient_01_7: -921868410
+      Star_Varient_01_26: -1253094026
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

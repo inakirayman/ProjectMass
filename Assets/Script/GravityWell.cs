@@ -8,10 +8,13 @@ public class GravityWell : MonoBehaviour
 
     public List<GameObject> SolarObjects = new List<GameObject>();
 
+    private CelestialBodyLogic _celestialBodyLogic;
     private CircleCollider2D _circleCollider2D;
 
     private void Start()
     {
+        _celestialBodyLogic = GetComponent<CelestialBodyLogic>(); 
+
         CircleCollider2D[] circleCollider2D = GetComponents<CircleCollider2D>();
         foreach (CircleCollider2D collider2D in circleCollider2D)
             if (collider2D.isTrigger)
@@ -19,6 +22,22 @@ public class GravityWell : MonoBehaviour
                 _circleCollider2D = collider2D;
                 break;
             }
+    }
+
+
+    private void Update()
+    {
+        GameObject[] tempArray = SolarObjects.ToArray();
+        
+        foreach(GameObject gameObject in tempArray)
+        {
+            if (gameObject.GetComponent<CelestialBodyLogic>().IsOrbiting)
+            {
+                SolarObjects.Remove(gameObject);
+            }
+           
+
+        }
     }
 
     private void FixedUpdate()
@@ -51,8 +70,40 @@ public class GravityWell : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<CelestialBodyLogic>().Type == CelestialBodyType.Astroid && !collision.GetComponent<CelestialBodyLogic>().IsOrbiting)
+        CelestialBodyLogic logic = collision.GetComponent<CelestialBodyLogic>();
+
+        if (_celestialBodyLogic.Type == CelestialBodyType.Astroid)
+            return;
+
+        if (SolarObjects.Contains(collision.gameObject))
+            return;
+
+        if (logic.IsOrbiting)
+            return;
+        
+        if(_celestialBodyLogic.Type == CelestialBodyType.Planet && !_celestialBodyLogic.IsOrbiting)
+        {
             SolarObjects.Add(collision.gameObject);
+        }
+        else if(_celestialBodyLogic.Type == CelestialBodyType.Planet && logic.Type == CelestialBodyType.Astroid)
+        {
+            SolarObjects.Add(collision.gameObject);
+        }
+        else if(_celestialBodyLogic.Type == CelestialBodyType.Star)
+        {
+            SolarObjects.Add(collision.gameObject);
+        }
+            
+
+
+
+
+        //if (collision.GetComponent<CelestialBodyLogic>().Type == CelestialBodyType.Astroid && !collision.GetComponent<CelestialBodyLogic>().IsOrbiting)
+        //    SolarObjects.Add(collision.gameObject);
+
+
+
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)

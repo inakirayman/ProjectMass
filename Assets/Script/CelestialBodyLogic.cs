@@ -6,13 +6,14 @@ public class CelestialBodyLogic : MonoBehaviour
 {
     [Header("Mass")]
     public int Mass = 0;
-    public int MinOrbitDistance = 2;
+    public float MinOrbitDistance = 2;
+    public float OrbitSpacing = 1;
     public float OrbitOffsetRange = 0.20f;
     public float Cooldown = 2;
     private float _currentTime;
 
 
-    private int _nextOrbitDistance;
+    private float _nextOrbitDistance;
 
     public int MaxOrbitingObjects = 0;
 
@@ -126,9 +127,11 @@ public class CelestialBodyLogic : MonoBehaviour
         foreach (GameObject Satellite in tempArray)
         {
             CelestialBodyLogic logic = Satellite.GetComponent<CelestialBodyLogic>();
-            if (IsSatellitInRange(Satellite) && logic.Type == sattlliteType)
+            if (IsSatellitInRange(Satellite) && logic.Type == sattlliteType && !logic.IsPlayer)
             {
                 logic.IsOrbiting = true;
+
+                if(IsPlayer)
                 logic.IsPlayer = true;
 
 
@@ -136,12 +139,15 @@ public class CelestialBodyLogic : MonoBehaviour
                 Satellites.Add(Satellite);
                 Orbiters orbiter = Satellite.GetComponent<Orbiters>();
                 orbiter.Center = transform;
-                orbiter.OrbitSpeed = Random.Range(1, 5);
+                orbiter.OrbitSpeed = Random.Range(1, 3);
+
+                if(logic.Type != CelestialBodyType.Astroid)
+                Satellite.GetComponent<GravityWell>().SolarObjects.Clear();
 
 
 
                 _gravityWell.SolarObjects.Remove(Satellite);
-
+                
 
                 _currentTime = 0;
             }
@@ -157,7 +163,7 @@ public class CelestialBodyLogic : MonoBehaviour
 
     private void SetSatelliteOrbitDistance()
     {
-        int distance = MinOrbitDistance;
+        float distance = MinOrbitDistance;
         for (int i = 0; i < Satellites.Count; i++)
         {
             Orbiters orbiter = Satellites[i].GetComponent<Orbiters>();
@@ -165,7 +171,7 @@ public class CelestialBodyLogic : MonoBehaviour
 
 
 
-            distance += 1;
+            distance += OrbitSpacing;
             _nextOrbitDistance = distance;
         }
     }
@@ -185,18 +191,22 @@ public class CelestialBodyLogic : MonoBehaviour
         }
 
 
+
+
+
+
     }
     void OnDrawGizmos()
     {
 
 
-        //if(Type != CelestialBodyType.Astroid)
-        //{
-        //    Gizmos.color = Color.yellow;
-        //    Gizmos.DrawWireSphere(transform.position, (float)_nextOrbitDistance + OrbitOffsetRange);
-        //    Gizmos.DrawWireSphere(transform.position, (float)_nextOrbitDistance - OrbitOffsetRange);
-        //}
- 
+        if (Type != CelestialBodyType.Astroid)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, (float)_nextOrbitDistance + OrbitOffsetRange);
+            Gizmos.DrawWireSphere(transform.position, (float)_nextOrbitDistance - OrbitOffsetRange);
+        }
+
 
 
 
