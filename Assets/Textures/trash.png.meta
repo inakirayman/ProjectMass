@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f8f6b61e934db9548ba3c60e5182307b
+guid: 07ffbab3bc38a4b4fb277a6f41711a79
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Astroid_Varient_01_0
+      name: 1490516494_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 480
-        width: 160
-        height: 160
+        y: 487.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad00ffeec3a593e42a55d6c2c63fb8a0
-      internalID: -298393848
+      spriteID: b536e3f9487ebbc4ca1cda522c2bc34f
+      internalID: 824669205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_1
+      name: 1490516494_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 480
-        width: 160
-        height: 160
+        x: 162
+        y: 487.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c67de3a561b1a4942ac6419054b7108d
-      internalID: 169632133
+      spriteID: c4434b3f9c4f6f645b8ebe025070c801
+      internalID: -1229847599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_2
+      name: 1490516494_2
       rect:
         serializedVersion: 2
-        x: 320
-        y: 480
-        width: 160
-        height: 160
+        x: 324
+        y: 487.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aee69b8ce4c8ac441a3d066feb521993
-      internalID: -246400953
+      spriteID: 723f89c81063df545850522e62cbde6c
+      internalID: 19678957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_3
+      name: 1490516494_3
       rect:
         serializedVersion: 2
-        x: 480
-        y: 480
-        width: 160
-        height: 160
+        x: 486
+        y: 487.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 219a463c9011db84887c3bb6eaae0528
-      internalID: -720407187
+      spriteID: d65c957be3a11a2478639260312710a8
+      internalID: -2067373745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_4
+      name: 1490516494_4
       rect:
         serializedVersion: 2
-        x: 640
-        y: 480
-        width: 160
-        height: 160
+        x: 648
+        y: 487.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 469476506bb4f5b4981a6e9f03aa2a50
-      internalID: 1325334183
+      spriteID: fb143842f28e3a94d99be84a17805fcb
+      internalID: -1609570612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_5
+      name: 1490516494_5
       rect:
         serializedVersion: 2
-        x: 800
-        y: 480
-        width: 160
-        height: 160
+        x: 810
+        y: 487.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cdd2e62e9dd21d479e1b74a3de397b0
-      internalID: 841953352
+      spriteID: 8797cf66793a25c4a8028a1e52997733
+      internalID: -1566146800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_6
+      name: 1490516494_6
       rect:
         serializedVersion: 2
-        x: 960
-        y: 480
-        width: 160
-        height: 160
+        x: 972
+        y: 487.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 292dbb5d1970936449dd6b6228916d50
-      internalID: -335960147
+      spriteID: 2c761dbe2cd938c45bf6290426683da0
+      internalID: -1404619573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_7
+      name: 1490516494_7
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 480
-        width: 160
-        height: 160
+        x: 1134
+        y: 487.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,188 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95a2c77a7d1e37e46aff134ecf034da6
-      internalID: 1433706336
+      spriteID: 2331713a7ab36b148bf68363c2b689cd
+      internalID: 1721463057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 664deac3bf9846c43bf0ca1ba2f3d332
-      internalID: 983999312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_9
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a207bf28438310846ab11533ba79b9ec
-      internalID: -461246733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_10
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b168d94757039044d9f41dc7f97dbadd
-      internalID: 1124941100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_11
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: acd00dbf0ed81d745bd226efc4ff44ca
-      internalID: 1073974159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_12
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f343ad93e818f1d4aae53206683102e6
-      internalID: -1085785967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_13
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70715a1e043c2b54b9c886f9420f8d16
-      internalID: -322250288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_14
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: acd0348149f878344b5f3e5600eee93d
-      internalID: 1645297506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_15
-      rect:
-        serializedVersion: 2
-        x: 1120
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5805016b4ab1ba04fa56d0a7eeb31a81
-      internalID: -989211944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_16
+      name: 1490516494_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 160
-        height: 160
+        y: 325.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24fadf94758d1a44083d0cdfe29edc03
-      internalID: 754100539
+      spriteID: 0675d5fa054aeef4b90dbc7f1f17ee3c
+      internalID: 501016862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_17
+      name: 1490516494_9
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
-        width: 160
-        height: 160
+        x: 162
+        y: 325.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -476,20 +308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ab0ce51a4f99614d9a3935b3676dde4
-      internalID: -1840921323
+      spriteID: ab98c7ddd3a99d141952d04a4ef548b2
+      internalID: 815893518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_18
+      name: 1490516494_10
       rect:
         serializedVersion: 2
-        x: 320
-        y: 160
-        width: 160
-        height: 160
+        x: 324
+        y: 325.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -497,20 +329,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f852cd63e5f768438cd798006b98587
-      internalID: 376850284
+      spriteID: 071898502124225438b413186200908f
+      internalID: -1372055869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_19
+      name: 1490516494_11
       rect:
         serializedVersion: 2
-        x: 480
-        y: 160
-        width: 160
-        height: 160
+        x: 486
+        y: 325.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -518,20 +350,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6188edc8f6cd770419608625fab264e8
-      internalID: -2103660013
+      spriteID: 057cb0dcbae7cce4a8da96545513f696
+      internalID: -982981340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_20
+      name: 1490516494_12
       rect:
         serializedVersion: 2
-        x: 640
-        y: 160
-        width: 160
-        height: 160
+        x: 648
+        y: 325.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -539,20 +371,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55551adf7b947114e895058388ad6ca4
-      internalID: 608810152
+      spriteID: bb85c61c086d73e4b842821806de6edd
+      internalID: 2139466872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_21
+      name: 1490516494_13
       rect:
         serializedVersion: 2
-        x: 800
-        y: 160
-        width: 160
-        height: 160
+        x: 810
+        y: 325.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -560,20 +392,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2451875dcc8003499df1a83d6815f0d
-      internalID: 451849070
+      spriteID: dcbd4d1ac0e66004a852f1c079cc203d
+      internalID: -1742307912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_22
+      name: 1490516494_14
       rect:
         serializedVersion: 2
-        x: 960
-        y: 160
-        width: 160
-        height: 160
+        x: 972
+        y: 325.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -581,20 +413,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5871ecba8725fcb4799774f5639d93b1
-      internalID: -398326660
+      spriteID: 85c26edc48324574b8b99c1623ddd626
+      internalID: 781573417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_23
+      name: 1490516494_15
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 160
-        width: 160
-        height: 160
+        x: 1134
+        y: 325.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -602,20 +434,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6a24ef9206c4a140991ff566ebbe7dd
-      internalID: 309560949
+      spriteID: 2185ff2ac73806943b9dcc771a88f977
+      internalID: -1591395736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_24
+      name: 1490516494_16
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 160
-        height: 160
+        y: 163.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -623,20 +455,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc431e27baff22c47aa3d640819ff47c
-      internalID: -1055416511
+      spriteID: 6d456a3a261dafe4ab41b1c961d5e0eb
+      internalID: -1225461336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_25
+      name: 1490516494_17
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 160
-        height: 160
+        x: 162
+        y: 163.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -644,20 +476,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68695224574918e4d934fc83d5210c19
-      internalID: 1614891687
+      spriteID: 1230d887cfb695648b28cf7bd0425a64
+      internalID: -1722629396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_26
+      name: 1490516494_18
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 160
-        height: 160
+        x: 324
+        y: 163.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -665,20 +497,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec9fbe674cbeb204398a5d84c8e2212a
-      internalID: 1628557001
+      spriteID: a74d6490d4b3ccb40bd2a807873b7a8e
+      internalID: 780924319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_27
+      name: 1490516494_19
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
-        width: 160
-        height: 160
+        x: 486
+        y: 163.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -686,20 +518,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a592db05dd6b242449def96bbb6ab12e
-      internalID: -847465968
+      spriteID: 0b3d214e22ad6e349bc31c0c9bb608ee
+      internalID: -1645290290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_28
+      name: 1490516494_20
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 160
-        height: 160
+        x: 648
+        y: 163.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -707,20 +539,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0809da2ac315404e8b5534c163ce473
-      internalID: 229440546
+      spriteID: 9fcb806b0fc8ade4784fe3b1f91d55c6
+      internalID: -486749631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_29
+      name: 1490516494_21
       rect:
         serializedVersion: 2
-        x: 800
-        y: 0
-        width: 160
-        height: 160
+        x: 810
+        y: 163.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -728,20 +560,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cc13592e54d272458c3b1afd75cfc35
-      internalID: -816225342
+      spriteID: 45ebe48f8b125324e9017b11c8d2f554
+      internalID: 244925350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_30
+      name: 1490516494_22
       rect:
         serializedVersion: 2
-        x: 960
-        y: 0
-        width: 160
-        height: 160
+        x: 972
+        y: 163.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -749,20 +581,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7efe2b32bbd52b048ae0ccf228058de0
-      internalID: 1990533770
+      spriteID: 8235b4c04091fd948a62e8ae76c1bb3d
+      internalID: -778746685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_31
+      name: 1490516494_23
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 0
-        width: 160
-        height: 160
+        x: 1134
+        y: 163.5
+        width: 162.25
+        height: 162.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -770,8 +602,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 772dd5709061e1b44825ba181e04ee82
-      internalID: -429661849
+      spriteID: 51e9ffbba8e8a2045952f90308f0d482
+      internalID: 1384118594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1490516494_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 162.25
+        height: 162.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34865b0ef3e198a47aa23df1cd971c4b
+      internalID: -821298801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1490516494_25
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1.5
+        width: 162.25
+        height: 162.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5693d3136ce7648b4191ee2701d4ce
+      internalID: -1690585931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1490516494_26
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1.5
+        width: 162.25
+        height: 162.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e37a21b76034544b6ea8671ca81e33
+      internalID: 1691668285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1490516494_27
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1.5
+        width: 162.25
+        height: 162.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb2bd451fa6f5e43bf287024d823054
+      internalID: 1435849656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1490516494_28
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1.5
+        width: 162.25
+        height: 162.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de45dbe84749efa448fb1de64a352089
+      internalID: 1367060765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1490516494_29
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1.5
+        width: 162.25
+        height: 162.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640a8e91c0b456640b9759ca3688b757
+      internalID: 36680257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1490516494_30
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1.5
+        width: 162.25
+        height: 162.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe043116af2b3b468f05c221dc56452
+      internalID: -615575733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1490516494_31
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1.5
+        width: 162.25
+        height: 162.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e17ee0f19d43564689fd37dd74c2067
+      internalID: -1165643849
       vertices: []
       indices: 
       edges: []
@@ -787,38 +787,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Astroid_Varient_01_30: 1990533770
-      Astroid_Varient_01_4: 1325334183
-      Astroid_Varient_01_26: 1628557001
-      Astroid_Varient_01_8: 983999312
-      Astroid_Varient_01_27: -847465968
-      Astroid_Varient_01_2: -246400953
-      Astroid_Varient_01_18: 376850284
-      Astroid_Varient_01_11: 1073974159
-      Astroid_Varient_01_7: 1433706336
-      Astroid_Varient_01_28: 229440546
-      Astroid_Varient_01_5: 841953352
-      Astroid_Varient_01_17: -1840921323
-      Astroid_Varient_01_1: 169632133
-      Astroid_Varient_01_19: -2103660013
-      Astroid_Varient_01_0: -298393848
-      Astroid_Varient_01_15: -989211944
-      Astroid_Varient_01_10: 1124941100
-      Astroid_Varient_01_9: -461246733
-      Astroid_Varient_01_12: -1085785967
-      Astroid_Varient_01_14: 1645297506
-      Astroid_Varient_01_21: 451849070
-      Astroid_Varient_01_20: 608810152
-      Astroid_Varient_01_22: -398326660
-      Astroid_Varient_01_31: -429661849
-      Astroid_Varient_01_3: -720407187
-      Astroid_Varient_01_13: -322250288
-      Astroid_Varient_01_25: 1614891687
-      Astroid_Varient_01_16: 754100539
-      Astroid_Varient_01_6: -335960147
-      Astroid_Varient_01_24: -1055416511
-      Astroid_Varient_01_23: 309560949
-      Astroid_Varient_01_29: -816225342
+      1490516494_14: 781573417
+      1490516494_9: 815893518
+      1490516494_26: 1691668285
+      1490516494_7: 1721463057
+      1490516494_5: -1566146800
+      1490516494_10: -1372055869
+      1490516494_1: -1229847599
+      1490516494_18: 780924319
+      1490516494_28: 1367060765
+      1490516494_19: -1645290290
+      1490516494_24: -821298801
+      1490516494_6: -1404619573
+      1490516494_4: -1609570612
+      1490516494_8: 501016862
+      1490516494_27: 1435849656
+      1490516494_13: -1742307912
+      1490516494_17: -1722629396
+      1490516494_3: -2067373745
+      1490516494_31: -1165643849
+      1490516494_11: -982981340
+      1490516494_23: 1384118594
+      1490516494_20: -486749631
+      1490516494_29: 36680257
+      1490516494_0: 824669205
+      1490516494_12: 2139466872
+      1490516494_22: -778746685
+      1490516494_25: -1690585931
+      1490516494_16: -1225461336
+      1490516494_15: -1591395736
+      1490516494_21: 244925350
+      1490516494_2: 19678957
+      1490516494_30: -615575733
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

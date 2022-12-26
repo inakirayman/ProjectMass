@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f8f6b61e934db9548ba3c60e5182307b
+guid: a4e82c08bfc5f15418ecd7a00140a9ba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Astroid_Varient_01_0
+      name: BlackHole_Varient_01_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 480
-        width: 160
-        height: 160
+        y: 960
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,41 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad00ffeec3a593e42a55d6c2c63fb8a0
-      internalID: -298393848
+      spriteID: bb2164a1bb1b17b4cbba27ae53434000
+      internalID: 971690525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_1
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 480
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c67de3a561b1a4942ac6419054b7108d
-      internalID: 169632133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_2
+      name: BlackHole_Varient_01_1
       rect:
         serializedVersion: 2
         x: 320
-        y: 480
-        width: 160
-        height: 160
+        y: 960
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,41 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aee69b8ce4c8ac441a3d066feb521993
-      internalID: -246400953
+      spriteID: 5f69464cea73a2d43b1edff10c859fee
+      internalID: 1735564192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_3
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 480
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 219a463c9011db84887c3bb6eaae0528
-      internalID: -720407187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_4
+      name: BlackHole_Varient_01_2
       rect:
         serializedVersion: 2
         x: 640
-        y: 480
-        width: 160
-        height: 160
+        y: 960
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,41 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 469476506bb4f5b4981a6e9f03aa2a50
-      internalID: 1325334183
+      spriteID: 6db482181d43bd645b8ed225511d4094
+      internalID: 1667493739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_5
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 480
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cdd2e62e9dd21d479e1b74a3de397b0
-      internalID: 841953352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_6
+      name: BlackHole_Varient_01_3
       rect:
         serializedVersion: 2
         x: 960
-        y: 480
-        width: 160
-        height: 160
+        y: 960
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 292dbb5d1970936449dd6b6228916d50
-      internalID: -335960147
+      spriteID: 8a505055d94b4d24ab4280c8e6640b15
+      internalID: 510370241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_7
+      name: BlackHole_Varient_01_4
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 480
-        width: 160
-        height: 160
+        x: 1280
+        y: 960
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +203,251 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95a2c77a7d1e37e46aff134ecf034da6
-      internalID: 1433706336
+      spriteID: f1c838ae9ba0d2249b1209b53e537ee2
+      internalID: -379422660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_8
+      name: BlackHole_Varient_01_5
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d97b8903003134790b7ae6af01297f
+      internalID: -1143745143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_6
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfb9e90c8bd23044bf5cf3242fb731e
+      internalID: 1265779454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_7
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 960
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33855d546e0d0c142a3fb2774c3302f6
+      internalID: -1867229993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e290a260f18988244bcac13746a0b6e9
+      internalID: -921790615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b040457396d4c544ae3fddf1b24a8e1
+      internalID: 1827516859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478427056bbf510459a01b258ddc0438
+      internalID: 1510667499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_11
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e4133ddef530a46af14531ae1417e4
+      internalID: -1426266615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00add56631cba04389fea0b48568143
+      internalID: -1379546199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_13
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbc43b710342604e9000f2f08be07d8
+      internalID: -1529554163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_14
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4172a076a388cc4983e70baa56afed8
+      internalID: -537865185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_15
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 640
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089e464caaa12794bb55fa4893fe5454
+      internalID: -2143378564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_16
       rect:
         serializedVersion: 2
         x: 0
         y: 320
-        width: 160
-        height: 160
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,41 +455,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 664deac3bf9846c43bf0ca1ba2f3d332
-      internalID: 983999312
+      spriteID: b909844d3919c8f49b01c5f12cf3b013
+      internalID: -1881626653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_9
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a207bf28438310846ab11533ba79b9ec
-      internalID: -461246733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_10
+      name: BlackHole_Varient_01_17
       rect:
         serializedVersion: 2
         x: 320
         y: 320
-        width: 160
-        height: 160
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,41 +476,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b168d94757039044d9f41dc7f97dbadd
-      internalID: 1124941100
+      spriteID: 7d3a681ef1e9f1c4f9a1880ff8dd3a81
+      internalID: -655164368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_11
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: acd00dbf0ed81d745bd226efc4ff44ca
-      internalID: 1073974159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_12
+      name: BlackHole_Varient_01_18
       rect:
         serializedVersion: 2
         x: 640
         y: 320
-        width: 160
-        height: 160
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,41 +497,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f343ad93e818f1d4aae53206683102e6
-      internalID: -1085785967
+      spriteID: 8e2e8c041314fef468dcc392dfba9831
+      internalID: 1779414074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_13
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 320
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70715a1e043c2b54b9c886f9420f8d16
-      internalID: -322250288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_14
+      name: BlackHole_Varient_01_19
       rect:
         serializedVersion: 2
         x: 960
         y: 320
-        width: 160
-        height: 160
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,20 +518,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acd0348149f878344b5f3e5600eee93d
-      internalID: 1645297506
+      spriteID: ac064fe4e5649ec47a4db002a6bff291
+      internalID: -1648744539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_15
+      name: BlackHole_Varient_01_20
       rect:
         serializedVersion: 2
-        x: 1120
+        x: 1280
         y: 320
-        width: 160
-        height: 160
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,20 +539,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5805016b4ab1ba04fa56d0a7eeb31a81
-      internalID: -989211944
+      spriteID: a16cebe7555ad2d49a4e5afe8f5e20df
+      internalID: -907135950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_16
+      name: BlackHole_Varient_01_21
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
-        width: 160
-        height: 160
+        x: 1600
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,20 +560,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24fadf94758d1a44083d0cdfe29edc03
-      internalID: 754100539
+      spriteID: 289e50a71b6e6dd4ba05e98a738a3c6e
+      internalID: -1221419005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_17
+      name: BlackHole_Varient_01_22
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
-        width: 160
-        height: 160
+        x: 1920
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -476,20 +581,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ab0ce51a4f99614d9a3935b3676dde4
-      internalID: -1840921323
+      spriteID: 6b35c45feb9ae60468f7eaf277c2ca77
+      internalID: -1858037191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_18
+      name: BlackHole_Varient_01_23
       rect:
         serializedVersion: 2
-        x: 320
-        y: 160
-        width: 160
-        height: 160
+        x: 2240
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -497,125 +602,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f852cd63e5f768438cd798006b98587
-      internalID: 376850284
+      spriteID: 279913ba053f3d14aa3516b0a93e8ae4
+      internalID: -1379254654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_19
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 160
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6188edc8f6cd770419608625fab264e8
-      internalID: -2103660013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_20
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 160
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55551adf7b947114e895058388ad6ca4
-      internalID: 608810152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_21
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 160
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2451875dcc8003499df1a83d6815f0d
-      internalID: 451849070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_22
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 160
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5871ecba8725fcb4799774f5639d93b1
-      internalID: -398326660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_23
-      rect:
-        serializedVersion: 2
-        x: 1120
-        y: 160
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6a24ef9206c4a140991ff566ebbe7dd
-      internalID: 309560949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_24
+      name: BlackHole_Varient_01_24
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 160
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -623,41 +623,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc431e27baff22c47aa3d640819ff47c
-      internalID: -1055416511
+      spriteID: fd662730f346fb3479f25ac6c33cd50f
+      internalID: -553515053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_25
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68695224574918e4d934fc83d5210c19
-      internalID: 1614891687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_26
+      name: BlackHole_Varient_01_25
       rect:
         serializedVersion: 2
         x: 320
         y: 0
-        width: 160
-        height: 160
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -665,41 +644,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec9fbe674cbeb204398a5d84c8e2212a
-      internalID: 1628557001
+      spriteID: 4b9bfbff713982b4faf3e92f43792874
+      internalID: 842666348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_27
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a592db05dd6b242449def96bbb6ab12e
-      internalID: -847465968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_28
+      name: BlackHole_Varient_01_26
       rect:
         serializedVersion: 2
         x: 640
         y: 0
-        width: 160
-        height: 160
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -707,41 +665,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0809da2ac315404e8b5534c163ce473
-      internalID: 229440546
+      spriteID: d7d7ae488835f9044a8b0405206bf709
+      internalID: 1654582375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_29
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cc13592e54d272458c3b1afd75cfc35
-      internalID: -816225342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Astroid_Varient_01_30
+      name: BlackHole_Varient_01_27
       rect:
         serializedVersion: 2
         x: 960
         y: 0
-        width: 160
-        height: 160
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -749,20 +686,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7efe2b32bbd52b048ae0ccf228058de0
-      internalID: 1990533770
+      spriteID: c4960821f41e7f240934825cff0c2d94
+      internalID: -805372860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astroid_Varient_01_31
+      name: BlackHole_Varient_01_28
       rect:
         serializedVersion: 2
-        x: 1120
+        x: 1280
         y: 0
-        width: 160
-        height: 160
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -770,8 +707,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 772dd5709061e1b44825ba181e04ee82
-      internalID: -429661849
+      spriteID: 1660483e864775141a38449c1779c25d
+      internalID: -291057775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_29
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f28715337414948a5d222eb12f46ee
+      internalID: -1655988747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_30
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd8a1f4818ebab4a81c34220fbd1eff
+      internalID: -36791530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackHole_Varient_01_31
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb98ac8f52e3554eb8b79cc1810e5e8
+      internalID: -883374946
       vertices: []
       indices: 
       edges: []
@@ -787,38 +787,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Astroid_Varient_01_30: 1990533770
-      Astroid_Varient_01_4: 1325334183
-      Astroid_Varient_01_26: 1628557001
-      Astroid_Varient_01_8: 983999312
-      Astroid_Varient_01_27: -847465968
-      Astroid_Varient_01_2: -246400953
-      Astroid_Varient_01_18: 376850284
-      Astroid_Varient_01_11: 1073974159
-      Astroid_Varient_01_7: 1433706336
-      Astroid_Varient_01_28: 229440546
-      Astroid_Varient_01_5: 841953352
-      Astroid_Varient_01_17: -1840921323
-      Astroid_Varient_01_1: 169632133
-      Astroid_Varient_01_19: -2103660013
-      Astroid_Varient_01_0: -298393848
-      Astroid_Varient_01_15: -989211944
-      Astroid_Varient_01_10: 1124941100
-      Astroid_Varient_01_9: -461246733
-      Astroid_Varient_01_12: -1085785967
-      Astroid_Varient_01_14: 1645297506
-      Astroid_Varient_01_21: 451849070
-      Astroid_Varient_01_20: 608810152
-      Astroid_Varient_01_22: -398326660
-      Astroid_Varient_01_31: -429661849
-      Astroid_Varient_01_3: -720407187
-      Astroid_Varient_01_13: -322250288
-      Astroid_Varient_01_25: 1614891687
-      Astroid_Varient_01_16: 754100539
-      Astroid_Varient_01_6: -335960147
-      Astroid_Varient_01_24: -1055416511
-      Astroid_Varient_01_23: 309560949
-      Astroid_Varient_01_29: -816225342
+      BlackHole_Varient_01_15: -2143378564
+      BlackHole_Varient_01_18: 1779414074
+      BlackHole_Varient_01_20: -907135950
+      BlackHole_Varient_01_1: 1735564192
+      BlackHole_Varient_01_24: -553515053
+      BlackHole_Varient_01_29: -1655988747
+      BlackHole_Varient_01_14: -537865185
+      BlackHole_Varient_01_12: -1379546199
+      BlackHole_Varient_01_19: -1648744539
+      BlackHole_Varient_01_26: 1654582375
+      BlackHole_Varient_01_6: 1265779454
+      BlackHole_Varient_01_13: -1529554163
+      BlackHole_Varient_01_17: -655164368
+      BlackHole_Varient_01_31: -883374946
+      BlackHole_Varient_01_7: -1867229993
+      BlackHole_Varient_01_9: 1827516859
+      BlackHole_Varient_01_0: 971690525
+      BlackHole_Varient_01_8: -921790615
+      BlackHole_Varient_01_27: -805372860
+      BlackHole_Varient_01_30: -36791530
+      BlackHole_Varient_01_11: -1426266615
+      BlackHole_Varient_01_28: -291057775
+      BlackHole_Varient_01_5: -1143745143
+      BlackHole_Varient_01_23: -1379254654
+      BlackHole_Varient_01_25: 842666348
+      BlackHole_Varient_01_21: -1221419005
+      BlackHole_Varient_01_16: -1881626653
+      BlackHole_Varient_01_10: 1510667499
+      BlackHole_Varient_01_3: 510370241
+      BlackHole_Varient_01_4: -379422660
+      BlackHole_Varient_01_22: -1858037191
+      BlackHole_Varient_01_2: 1667493739
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 160
@@ -787,14 +787,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Star_Varient_01_9: 976361692
+      Star_Varient_01_1: -946621861
       Star_Varient_01_17: 1790104284
       Star_Varient_01_15: -1985927643
       Star_Varient_01_13: -143685290
       Star_Varient_01_21: 912545956
+      Star_Varient_01_26: -1253094026
       Star_Varient_01_19: -108084405
       Star_Varient_01_27: 1934990695
-      Star_Varient_01_29: -1826830247
       Star_Varient_01_20: -296744823
       Star_Varient_01_10: -678026067
       Star_Varient_01_14: 1436938211
@@ -814,11 +814,11 @@ TextureImporter:
       Star_Varient_01_24: -334079732
       Star_Varient_01_11: 700191558
       Star_Varient_01_8: -603768900
-      Star_Varient_01_1: -946621861
-      Star_Varient_01_23: 241174854
-      Star_Varient_01_28: -105350589
       Star_Varient_01_7: -921868410
-      Star_Varient_01_26: -1253094026
+      Star_Varient_01_28: -105350589
+      Star_Varient_01_29: -1826830247
+      Star_Varient_01_9: 976361692
+      Star_Varient_01_23: 241174854
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

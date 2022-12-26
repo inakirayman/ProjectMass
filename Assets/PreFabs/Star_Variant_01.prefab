@@ -7,14 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 431993577104974575, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 431993577104974575, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4959195071571778379, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -63,33 +55,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7229797293179457554, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
-      propertyPath: m_Mass
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7229797293179457555, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
-      propertyPath: m_Radius
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7229797293179457557, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
       propertyPath: m_Name
       value: Star_Variant_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 7229797293179457564, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
-      propertyPath: OrbitSpacing
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7229797293179457564, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
-      propertyPath: MinOrbitDistance
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7966563178031048735, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 0c342df5fc23ed4439027cef22da3ec1, type: 2}
-    - target: {fileID: 9082590647327812696, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
-      propertyPath: m_Name
-      value: Star_Sprite
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}

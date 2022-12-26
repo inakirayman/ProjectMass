@@ -23,9 +23,11 @@ public class Orbiters : MonoBehaviour
 
     public float lerpTime = 1f; // the time it should take to move to the target position
     private float _currentLerpTime; // a counter to track the time elapsed since 
+    private float _maxScale;
 
     void Start()
     {
+        _maxScale = transform.localScale.x;
         _rb = GetComponent<Rigidbody2D>();
 
         if (Center != null)
@@ -77,8 +79,24 @@ public class Orbiters : MonoBehaviour
             float t = _currentLerpTime / 0.5f;
             _rb.MovePosition(Vector3.Lerp(transform.position, Center.position, t));
 
+            // Calculate the distance between the current position and the center object
+            float distance = Vector3.Distance(transform.position, Center.position);
+            // Use the distance to determine the scale
+            float startScale = transform.localScale.x;
+            float endScale = distance / _maxScale;
+            float scale = Mathf.Lerp(startScale, endScale, t);
+            // Clamp the scale to the range [0, 1]
+            scale = Mathf.Clamp(scale, 0f, 1f);
+            transform.localScale = new Vector3(scale, scale, scale);
+
+
             if (_currentLerpTime > 0.5f)
+            {
                 gameObject.SetActive(false);
+                Destroy(gameObject);
+            }
+                
+                
         }
        
 

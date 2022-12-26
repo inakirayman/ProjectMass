@@ -93,6 +93,10 @@ public class GravityWell : MonoBehaviour
         {
             SolarObjects.Add(collision.gameObject);
         }
+        else if(_celestialBodyLogic.Type == CelestialBodyType.Blackhole)
+        {
+            SolarObjects.Add(collision.gameObject);
+        }
             
 
 
