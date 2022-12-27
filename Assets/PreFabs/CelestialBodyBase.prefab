@@ -223,7 +223,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 0.7019608}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.9137255}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5000,7 +5000,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.4
+  m_Mass: 0.3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -5040,15 +5040,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16898d350a8db7e47a4bab2cb43d3d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collided: 0
+  Collided: 0
   Mass: 10
-  MinOrbitDistance: 2
+  MinOrbitDistance: 1
   MinOrbitSpeed: 1
   MaxOrbitSpeed: 2
-  OrbitSpacing: 1
+  OrbitSpacing: 0.5
   OrbitOffsetRange: 0.2
-  Cooldown: 2
-  MaxOrbitingObjects: 0
+  Cooldown: 1
+  MaxOrbitingObjects: 3
   Type: 1
   _gravityWell: {fileID: 0}
   Satellites: []

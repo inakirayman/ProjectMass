@@ -27,13 +27,21 @@ PrefabInstance:
       propertyPath: Type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6222254069031386864, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: MaxOrbitingObjects
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386865, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_Radius
       value: 0.34
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386873, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_Name
-      value: Astroid_Base
+      value: Astroid_Varient_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222254069031386873, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_TagString
+      value: Celestials
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386877, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_RootOrder
@@ -41,11 +49,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386877, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7.69
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386877, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 6.51
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386877, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -87,5 +95,13 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 6666011683773581043, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d44b22ac072dee743a9079db73edd824, type: 2}
+    - target: {fileID: 8565315333059360167, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -298393848, guid: f8f6b61e934db9548ba3c60e5182307b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}

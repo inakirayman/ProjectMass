@@ -7,10 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 256333817105866353, guid: d278fdd9eac331848a4dc276861c7f53, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: d44b22ac072dee743a9079db73edd824, type: 2}
     - target: {fileID: 672482659979912827, guid: d278fdd9eac331848a4dc276861c7f53, type: 3}
       propertyPath: m_Name
       value: Astroid_Varient_01
@@ -21,11 +17,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 672482659979912831, guid: d278fdd9eac331848a4dc276861c7f53, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7.69
       objectReference: {fileID: 0}
     - target: {fileID: 672482659979912831, guid: d278fdd9eac331848a4dc276861c7f53, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 6.51
       objectReference: {fileID: 0}
     - target: {fileID: 672482659979912831, guid: d278fdd9eac331848a4dc276861c7f53, type: 3}
       propertyPath: m_LocalPosition.z
@@ -59,9 +55,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3013713660407967013, guid: d278fdd9eac331848a4dc276861c7f53, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -298393848, guid: f8f6b61e934db9548ba3c60e5182307b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d278fdd9eac331848a4dc276861c7f53, type: 3}

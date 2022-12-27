@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4031349006604258307, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4031349006604258307, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5478450125373211316, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_Name
+      value: BlackHole_Sprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222254069031386864, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: Mass
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386864, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: Type
       value: 3
@@ -23,9 +39,21 @@ PrefabInstance:
       propertyPath: MinOrbitDistance
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 6222254069031386864, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: MaxOrbitingObjects
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222254069031386865, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_Radius
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386873, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_Name
-      value: BlackHole_Base
+      value: BlackHole_Variant_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222254069031386873, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_TagString
+      value: Celestials
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386877, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_RootOrder
@@ -71,9 +99,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6222254069031386878, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666011683773581043, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 96f80d0fa292c8a4895d103a1b54d606, type: 2}
+    - target: {fileID: 7505140568291507105, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: Distance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565315333059360167, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 971690525, guid: a4e82c08bfc5f15418ecd7a00140a9ba, type: 3}
     - target: {fileID: 8565315333059360167, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7d619a3f0676ef34ba1a48841ee2c9c7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _astroidBase: {fileID: 672482659979912827, guid: d278fdd9eac331848a4dc276861c7f53, type: 3}
+  - _planetBase: {fileID: 6222254069031386873, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+  - _starBase: {fileID: 7229797293179457557, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
+  - _blackHoleBase: {fileID: 1008733434050044343, guid: 94aa51b0e76e69f4c8978ed06c95642b, type: 3}
+  - _astroidAnimatorControllers: {fileID: 9100000, guid: d44b22ac072dee743a9079db73edd824, type: 2}
+  - _planetAnimatorControllers: {fileID: 9100000, guid: 7a7927873469b7d40bdf68d70f8b79d0, type: 2}
+  - _starAnimatorControllers: {fileID: 9100000, guid: 0c342df5fc23ed4439027cef22da3ec1, type: 2}
+  - _blackHoleAnimatorControllers: {fileID: 9100000, guid: 96f80d0fa292c8a4895d103a1b54d606, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

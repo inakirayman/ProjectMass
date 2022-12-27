@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CelestialBodyLogic : MonoBehaviour
 {
-    public bool collided = false;
+    public bool Collided = false;
 
 
 
@@ -45,10 +45,13 @@ public class CelestialBodyLogic : MonoBehaviour
 
     void Start()
     {
-        if (Type != CelestialBodyType.Astroid)
-        {
-            _gravityWell = gameObject.GetComponent<GravityWell>();
-        }
+        _currentTime = Cooldown;
+
+
+        
+        
+        _gravityWell = gameObject.GetComponent<GravityWell>();
+        
         _nextOrbitDistance = MinOrbitDistance;
 
     }
@@ -59,7 +62,7 @@ public class CelestialBodyLogic : MonoBehaviour
         _currentTime += Time.deltaTime;
 
 
-        if (Type != CelestialBodyType.Astroid)
+        if (Type != CelestialBodyType.Astroid &&  Satellites.Count < MaxOrbitingObjects)
         {
             if (Type == CelestialBodyType.Planet)
                 AddCelestialBodyToSattllites(CelestialBodyType.Astroid);
@@ -110,8 +113,54 @@ public class CelestialBodyLogic : MonoBehaviour
             _nextOrbitDistance = MinOrbitDistance;
         }
 
+        CelestialBodyStateCheck();
+    }
+
+    private void CelestialBodyStateCheck()
+    {
+
+        if (Type == CelestialBodyType.Astroid && Mass >= EvolveHelper.PlanetMass)
+        {
+            Type = CelestialBodyType.Planet;
+            EvolveHelper.UpdateStats(gameObject, CelestialBodyType.Planet);
+        }
+        else if (Type == CelestialBodyType.Planet && Mass >= EvolveHelper.StarMass)
+        {
+            Type = CelestialBodyType.Star;
+            EvolveHelper.UpdateStats(gameObject, CelestialBodyType.Star);
+        }
+        else if (Type == CelestialBodyType.Star && Mass >= EvolveHelper.BlackHoleMass)
+        {
+            Type = CelestialBodyType.Blackhole;
+            EvolveHelper.UpdateStats(gameObject, CelestialBodyType.Blackhole);
+        }
+        else if (Type == CelestialBodyType.Blackhole && Mass < EvolveHelper.StarMass)
+        {
+            Type = CelestialBodyType.Star;
+            EvolveHelper.UpdateStats(gameObject, CelestialBodyType.Star);
+        }
+        else if (Type == CelestialBodyType.Star && Mass < EvolveHelper.PlanetMass)
+        {
+            Type = CelestialBodyType.Planet;
+            EvolveHelper.UpdateStats(gameObject, CelestialBodyType.Planet);
+        }
+        else if (Type == CelestialBodyType.Planet && Mass < EvolveHelper.PlanetMass)
+        {
+            Type = CelestialBodyType.Astroid;
+            EvolveHelper.UpdateStats(gameObject, CelestialBodyType.Astroid);
+        }
 
     }
+
+    [ContextMenu("Become Astroid")]
+    public void Test()
+    {
+        EvolveHelper.UpdateStats(gameObject ,Type);// change
+        Type = CelestialBodyType.Astroid;
+
+    }
+
+
 
     private void RequestSatelliteToAbsorbe()
     {
@@ -244,9 +293,9 @@ public class CelestialBodyLogic : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject gameObject = collision.gameObject;
-        if (gameObject.GetComponent<CelestialBodyLogic>().Type == CelestialBodyType.Astroid && Type == CelestialBodyType.Astroid && !gameObject.GetComponent<CelestialBodyLogic>().IsPlayer && !collided)
+        if (gameObject.GetComponent<CelestialBodyLogic>().Type == CelestialBodyType.Astroid && Type == CelestialBodyType.Astroid && !gameObject.GetComponent<CelestialBodyLogic>().IsPlayer && !Collided)
         {
-            gameObject.GetComponent<CelestialBodyLogic>().collided = true;
+            gameObject.GetComponent<CelestialBodyLogic>().Collided = true;
             Mass += gameObject.GetComponent<CelestialBodyLogic>().Mass;
 
             _particleSystem.Play();
@@ -268,7 +317,7 @@ public class CelestialBodyLogic : MonoBehaviour
         {
             Gizmos.color = Color.yellow;
 
-            Gizmos.DrawWireSphere(transform.position, MinOrbitDistance);
+            Gizmos.DrawWireSphere(transform.position, _nextOrbitDistance);
 
             //Gizmos.DrawWireSphere(transform.position, (float)_nextOrbitDistance + OrbitOffsetRange);
             //Gizmos.DrawWireSphere(transform.position, (float)_nextOrbitDistance - OrbitOffsetRange);

@@ -7,10 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4959195071571778379, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 851909347, guid: e7d0c5918897d8045ad88f9ca046d22c, type: 3}
     - target: {fileID: 7229797293179457553, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -59,9 +55,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Star_Variant_01
       objectReference: {fileID: 0}
-    - target: {fileID: 7966563178031048735, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 0c342df5fc23ed4439027cef22da3ec1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32faf5a142ad5f5498b8942d57ee739c, type: 3}

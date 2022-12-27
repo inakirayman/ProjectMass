@@ -20,6 +20,10 @@ PrefabInstance:
       value: Star_Sprite
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386864, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: Mass
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222254069031386864, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: Type
       value: 2
       objectReference: {fileID: 0}
@@ -41,7 +45,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386873, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_Name
-      value: Star_base
+      value: Star_Variant_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222254069031386873, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
+      propertyPath: m_TagString
+      value: Celestials
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386877, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_RootOrder
@@ -98,11 +106,11 @@ PrefabInstance:
     - target: {fileID: 6666011683773581043, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 0c342df5fc23ed4439027cef22da3ec1, type: 2}
     - target: {fileID: 8565315333059360167, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+      objectReference: {fileID: 851909347, guid: e7d0c5918897d8045ad88f9ca046d22c, type: 3}
     - target: {fileID: 8565315333059360167, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_SortingOrder
       value: 2

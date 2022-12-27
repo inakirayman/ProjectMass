@@ -63,7 +63,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.64
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -134,7 +134,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   MovementSpeed: 12
-  Type: 1
+  Type: 0
+  LerpTime: 1
+  CameraSizeAstroid: 6
+  CameraSizePlanet: 9
+  CameraSizeStar: 12
+  CameraSizeBlackHole: 15
 --- !u!50 &4308730032755583286
 Rigidbody2D:
   serializedVersion: 4
