@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
     private float _desiredSize;
     private float _currentLerpTime;
 
+    private bool _isGameOver;
 
 
     // Start is called before the first frame update
@@ -49,13 +50,23 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateCameraSize(Type);
-        CameraLerp();
-        Type = _player.GetComponent<CelestialBodyLogic>().Type;
-        _movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        if (_player == null && !_isGameOver)
+        {
+            Debug.Log("gamerover");
+            _isGameOver = true;
+        }
+        else if(!_isGameOver)
+        {
+            UpdateCameraSize(Type);
+            CameraLerp();
 
 
 
+            Type = _player.GetComponent<CelestialBodyLogic>().Type;
+            _movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+
+
+        }
 
     }
 
@@ -112,7 +123,8 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-      
+        if (_isGameOver)
+            return;
 
         //transform.position = transform.position + new Vector3(_movement.x * MovementSpeed * Time.deltaTime, _movement.y * MovementSpeed * Time.deltaTime, 0);
 

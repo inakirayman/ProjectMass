@@ -37,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386864, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: MinOrbitDistance
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386864, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: MaxOrbitingObjects
@@ -49,7 +49,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386873, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_Name
-      value: BlackHole_Variant_01
+      value: BlackHole_Base
       objectReference: {fileID: 0}
     - target: {fileID: 6222254069031386873, guid: 60a08e7ea776d9a4eaa7a58e8e6757b9, type: 3}
       propertyPath: m_TagString

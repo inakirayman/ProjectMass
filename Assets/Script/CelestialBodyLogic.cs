@@ -42,16 +42,18 @@ public class CelestialBodyLogic : MonoBehaviour
     [Header("ParticleSystems")]
     [SerializeField]
     private ParticleSystem _particleSystem;
+    private int _tolerance =2;
+    public int Tolerance => _tolerance;
 
     void Start()
     {
         _currentTime = Cooldown;
 
 
-        
-        
+
+
         _gravityWell = gameObject.GetComponent<GravityWell>();
-        
+
         _nextOrbitDistance = MinOrbitDistance;
 
     }
@@ -62,14 +64,14 @@ public class CelestialBodyLogic : MonoBehaviour
         _currentTime += Time.deltaTime;
 
 
-        if (Type != CelestialBodyType.Astroid &&  Satellites.Count < MaxOrbitingObjects)
+        if (Type != CelestialBodyType.Astroid && Satellites.Count < MaxOrbitingObjects)
         {
             if (Type == CelestialBodyType.Planet)
                 AddCelestialBodyToSattllites(CelestialBodyType.Astroid);
 
             else if (Type == CelestialBodyType.Star)
                 AddCelestialBodyToSattllites(CelestialBodyType.Planet);
-            else if(Type == CelestialBodyType.Blackhole)
+            else if (Type == CelestialBodyType.Blackhole)
             {
                 AddCelestialBodyToSattllites(CelestialBodyType.Astroid);
                 AddCelestialBodyToSattllites(CelestialBodyType.Planet);
@@ -94,7 +96,7 @@ public class CelestialBodyLogic : MonoBehaviour
                 else if (Input.GetKeyDown(KeyCode.Space))
                     AbsorbLightestSatellite();
             }
-            else if(Type == CelestialBodyType.Blackhole)
+            else if (Type == CelestialBodyType.Blackhole)
             {
                 if (DoesSatellitesHaveSatellites())
                 {
@@ -105,7 +107,7 @@ public class CelestialBodyLogic : MonoBehaviour
 
             }
 
-            
+
             CheckSatellites();
         }
         else
@@ -118,6 +120,7 @@ public class CelestialBodyLogic : MonoBehaviour
 
     private void CelestialBodyStateCheck()
     {
+        
 
         if (Type == CelestialBodyType.Astroid && Mass >= EvolveHelper.PlanetMass)
         {
@@ -126,41 +129,48 @@ public class CelestialBodyLogic : MonoBehaviour
         }
         else if (Type == CelestialBodyType.Planet && Mass >= EvolveHelper.StarMass)
         {
+            ClearAllSatillites();
+
             Type = CelestialBodyType.Star;
             EvolveHelper.UpdateStats(gameObject, CelestialBodyType.Star);
         }
         else if (Type == CelestialBodyType.Star && Mass >= EvolveHelper.BlackHoleMass)
         {
+
             Type = CelestialBodyType.Blackhole;
             EvolveHelper.UpdateStats(gameObject, CelestialBodyType.Blackhole);
         }
-        else if (Type == CelestialBodyType.Blackhole && Mass < EvolveHelper.StarMass)
+        else if (Type == CelestialBodyType.Blackhole && Mass < EvolveHelper.BlackHoleMass - _tolerance)
         {
             Type = CelestialBodyType.Star;
             EvolveHelper.UpdateStats(gameObject, CelestialBodyType.Star);
         }
-        else if (Type == CelestialBodyType.Star && Mass < EvolveHelper.PlanetMass)
+        else if (Type == CelestialBodyType.Star && Mass < EvolveHelper.StarMass - _tolerance)
         {
+            ClearAllSatillites();
             Type = CelestialBodyType.Planet;
             EvolveHelper.UpdateStats(gameObject, CelestialBodyType.Planet);
         }
-        else if (Type == CelestialBodyType.Planet && Mass < EvolveHelper.PlanetMass)
+        else if (Type == CelestialBodyType.Planet && Mass < EvolveHelper.PlanetMass - _tolerance)
         {
+            ClearAllSatillites();
             Type = CelestialBodyType.Astroid;
             EvolveHelper.UpdateStats(gameObject, CelestialBodyType.Astroid);
         }
 
     }
 
-    [ContextMenu("Become Astroid")]
-    public void Test()
+    private void ClearAllSatillites()
     {
-        EvolveHelper.UpdateStats(gameObject ,Type);// change
-        Type = CelestialBodyType.Astroid;
+        foreach (GameObject satellite in Satellites)
+        {
+            satellite.GetComponent<Orbiters>().Center = null;
+            satellite.GetComponent<CelestialBodyLogic>().IsOrbiting = false;
+            satellite.GetComponent<CelestialBodyLogic>().IsPlayer = false;
 
+        }
+        Satellites.Clear();
     }
-
-
 
     private void RequestSatelliteToAbsorbe()
     {
@@ -200,14 +210,26 @@ public class CelestialBodyLogic : MonoBehaviour
     private void CheckSatellites()
     {
 
-        foreach (GameObject Satellite in Satellites)
+        foreach (GameObject satellite in Satellites)
         {
-            if (!Satellite.activeSelf)
+            if (satellite == null)
             {
-                Satellites.Remove(Satellite);
-                Destroy(Satellite);
+                Satellites.Remove(satellite);
+            }
+            else if (!satellite.activeSelf)
+            {
+                Satellites.Remove(satellite);
+                Destroy(satellite);
 
             }
+            else if (satellite.GetComponent<CelestialBodyLogic>().Type == Type && Type != CelestialBodyType.Blackhole)
+            {
+                satellite.GetComponent<Orbiters>().Center = null;
+                satellite.GetComponent<CelestialBodyLogic>().IsOrbiting = false;
+                satellite.GetComponent<CelestialBodyLogic>().IsPlayer = false;
+                Satellites.Remove(satellite);
+            }
+
         }
 
 
@@ -275,13 +297,19 @@ public class CelestialBodyLogic : MonoBehaviour
         float distance = MinOrbitDistance;
         for (int i = 0; i < Satellites.Count; i++)
         {
-            Orbiters orbiter = Satellites[i].GetComponent<Orbiters>();
-            orbiter.Distance = distance;
+
+            if (Satellites[i] != null)
+            {
+                Orbiters orbiter = Satellites[i].GetComponent<Orbiters>();
+                orbiter.Distance = distance;
 
 
 
-            distance += OrbitSpacing;
-            _nextOrbitDistance = distance;
+                distance += OrbitSpacing;
+                _nextOrbitDistance = distance;
+            }
+
+
         }
     }
 
@@ -293,14 +321,32 @@ public class CelestialBodyLogic : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject gameObject = collision.gameObject;
-        if (gameObject.GetComponent<CelestialBodyLogic>().Type == CelestialBodyType.Astroid && Type == CelestialBodyType.Astroid && !gameObject.GetComponent<CelestialBodyLogic>().IsPlayer && !Collided)
-        {
-            gameObject.GetComponent<CelestialBodyLogic>().Collided = true;
-            Mass += gameObject.GetComponent<CelestialBodyLogic>().Mass;
+        if (Satellites.Contains(gameObject))
+            return;
 
-            _particleSystem.Play();
-            gameObject.SetActive(false);
-            Destroy(gameObject);
+
+
+        CelestialBodyLogic logic = collision.gameObject.GetComponent<CelestialBodyLogic>();
+
+
+
+        if (logic.Type == CelestialBodyType.Astroid)
+            AstroidCollisionLogic(gameObject, logic);
+        else if (logic.Type == CelestialBodyType.Planet)
+            PlanetCollisionLogic(gameObject, logic);
+        else if (logic.Type == CelestialBodyType.Star)
+            StarCollisionLogic(gameObject, logic);
+        else if (logic.Type == CelestialBodyType.Blackhole)
+        {
+            if (logic.Mass < Mass)
+            {
+
+                Mass += logic.Mass;
+
+                gameObject.SetActive(false);
+                Destroy(gameObject);
+            }
+
         }
 
 
@@ -308,7 +354,94 @@ public class CelestialBodyLogic : MonoBehaviour
 
 
 
+
+
     }
+
+    private void StarCollisionLogic(GameObject gameObject, CelestialBodyLogic logic)
+    {
+        if (Type == CelestialBodyType.Star)
+        {
+            _particleSystem.Play();
+            this.gameObject.GetComponent<AudioSource>().Play();
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else if (Type == CelestialBodyType.Blackhole)
+        {
+            Mass += logic.Mass;
+
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+    }
+
+    private void PlanetCollisionLogic(GameObject gameObject, CelestialBodyLogic logic)
+    {
+        if (Type == CelestialBodyType.Planet)
+        {
+            _particleSystem.Play();
+            this.gameObject.GetComponent<AudioSource>().Play();
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else if (Type == CelestialBodyType.Star)
+        {
+            logic.Collided = true;
+            Mass -= logic.Mass / 2;
+
+            _particleSystem.Play();
+            this.gameObject.GetComponent<AudioSource>().Play();
+
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else if (Type == CelestialBodyType.Blackhole)
+        {
+            Mass += logic.Mass;
+
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+
+
+    }
+
+    private void AstroidCollisionLogic(GameObject gameObject, CelestialBodyLogic logic)
+    {
+        if (Type == CelestialBodyType.Astroid && !logic.IsPlayer && !Collided)
+        {
+            logic.Collided = true;
+            Mass += logic.Mass;
+            
+            _particleSystem.Play();
+            this.gameObject.GetComponent<AudioSource>().Play();
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else if (Type == CelestialBodyType.Planet || Type == CelestialBodyType.Star)
+        {
+            logic.Collided = true;
+            Mass -= logic.Mass;
+
+            _particleSystem.Play();
+            this.gameObject.GetComponent<AudioSource>().Play();
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else if (Type == CelestialBodyType.Blackhole)
+        {
+            Mass += logic.Mass;
+
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+
+
+
+
+    }
+
     void OnDrawGizmos()
     {
 
