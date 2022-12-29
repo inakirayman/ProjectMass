@@ -45,6 +45,11 @@ public class CelestialBodyLogic : MonoBehaviour
     private int _tolerance =2;
     public int Tolerance => _tolerance;
 
+
+    
+
+
+
     void Start()
     {
         _currentTime = Cooldown;
@@ -116,6 +121,9 @@ public class CelestialBodyLogic : MonoBehaviour
         }
 
         CelestialBodyStateCheck();
+
+        
+
     }
 
     private void CelestialBodyStateCheck()
@@ -446,7 +454,7 @@ public class CelestialBodyLogic : MonoBehaviour
     {
 
 
-        if (Type != CelestialBodyType.Astroid)
+        if (Type != CelestialBodyType.Astroid && Satellites.Count != MaxOrbitingObjects)
         {
             Gizmos.color = Color.yellow;
 
@@ -461,4 +469,8 @@ public class CelestialBodyLogic : MonoBehaviour
 
 
     }
+
+ 
+    
+
 }
