@@ -36,6 +36,9 @@ public class Player : MonoBehaviour
     private float _currentLerpTime;
 
     private bool _isGameOver;
+    [SerializeField]private Canvas _canvasUI;
+    [SerializeField]private Canvas _canvasGameover;
+
 
 
     // Start is called before the first frame update
@@ -53,6 +56,9 @@ public class Player : MonoBehaviour
         if (_player == null && !_isGameOver)
         {
             Debug.Log("gamerover");
+            _canvasUI.gameObject.SetActive(false);
+            _canvasGameover.gameObject.SetActive(true);
+
             _isGameOver = true;
         }
         else if(!_isGameOver)
