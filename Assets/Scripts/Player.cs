@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public BoxCollider2D PlayingField;
     public GameObject _player;
 
 
@@ -27,7 +28,7 @@ public class Player : MonoBehaviour
     public float CameraSizePlanet = 9;
     public float CameraSizeStar = 15;
     public float CameraSizeBlackHole = 15;
-    
+
 
     //Private
     private bool _cameraSettingsChanged;
@@ -36,8 +37,8 @@ public class Player : MonoBehaviour
     private float _currentLerpTime;
 
     private bool _isGameOver;
-    [SerializeField]private Canvas _canvasUI;
-    [SerializeField]private Canvas _canvasGameover;
+    [SerializeField] private Canvas _canvasUI;
+    [SerializeField] private Canvas _canvasGameover;
 
 
 
@@ -53,6 +54,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (_player == null && !_isGameOver)
         {
             Debug.Log("gamerover");
@@ -61,7 +63,7 @@ public class Player : MonoBehaviour
 
             _isGameOver = true;
         }
-        else if(!_isGameOver)
+        else if (!_isGameOver)
         {
             UpdateCameraSize(Type);
             CameraLerp();
@@ -75,6 +77,67 @@ public class Player : MonoBehaviour
         }
 
     }
+    private bool CheckIfGameObjecetIsInsideBounds()
+    {
+
+        bool outofbounds = false;
+
+        float yCamera = this.transform.position.y;
+        float xCamera = this.transform.position.x;
+
+        Transform transform = _player.transform;
+
+
+
+
+        float yPlayer = transform.position.y;
+        float xPlayer = transform.position.x;
+
+        if (yCamera > PlayingField.bounds.max.y)
+        {
+            yCamera *= -1;
+            yPlayer *= -1;
+            outofbounds = true;
+        }
+        else if (yCamera < PlayingField.bounds.min.y)
+        {
+            yCamera *= -1;
+            yPlayer *= -1;
+            outofbounds = true;
+        }
+
+        if (xCamera > PlayingField.bounds.max.x)
+        {
+            xCamera *= -1;
+            xPlayer *= -1;
+            outofbounds = true;
+        }
+        else if (xCamera < PlayingField.bounds.min.x)
+        {
+            xCamera *= -1;
+            xPlayer *= -1;
+            outofbounds = true;
+        }
+
+        var xOffset = xCamera - xPlayer;
+        var yOffset = yCamera - yPlayer;
+
+
+
+        if (outofbounds)
+        {
+
+
+            gameObject.GetComponent<Rigidbody2D>().position = new Vector2(xCamera, yCamera);
+
+            _player.GetComponent<Rigidbody2D>().position = new Vector2(xPlayer + xOffset, yPlayer + yOffset);
+
+        }
+
+        return outofbounds;
+
+    }
+
 
     private void CameraLerp()
     {
@@ -101,31 +164,31 @@ public class Player : MonoBehaviour
 
     public void UpdateCameraSize(CelestialBodyType type)
     {
-        if(type == CelestialBodyType.Astroid)
+        if (type == CelestialBodyType.Astroid)
         {
             _desiredSize = CameraSizeAstroid;
-           
+
         }
-        else if(type == CelestialBodyType.Planet)
+        else if (type == CelestialBodyType.Planet)
         {
             _desiredSize = CameraSizePlanet;
-          
+
         }
-        else if(type == CelestialBodyType.Star)
+        else if (type == CelestialBodyType.Star)
         {
             _desiredSize = CameraSizeStar;
-           
+
         }
-        else if(type == CelestialBodyType.Blackhole)
+        else if (type == CelestialBodyType.Blackhole)
         {
             _desiredSize = CameraSizeBlackHole;
-         
+
         }
 
-        if(_startSize != _desiredSize)
-        _cameraSettingsChanged = true; 
+        if (_startSize != _desiredSize)
+            _cameraSettingsChanged = true;
     }
-    
+
 
     private void FixedUpdate()
     {
@@ -133,12 +196,14 @@ public class Player : MonoBehaviour
             return;
 
         //transform.position = transform.position + new Vector3(_movement.x * MovementSpeed * Time.deltaTime, _movement.y * MovementSpeed * Time.deltaTime, 0);
+        if (!CheckIfGameObjecetIsInsideBounds())
+            _player.GetComponent<Rigidbody2D>().MovePosition(Vector2.Lerp(_player.transform.position, transform.position, (MovementSpeed / 3) * Time.deltaTime));
 
-        _player.GetComponent<Rigidbody2D>().MovePosition(Vector2.Lerp(_player.transform.position, transform.position, (MovementSpeed/5) * Time.deltaTime));
 
 
-        
-        _rigidbody.AddForce(  new Vector2(_movement.x * MovementSpeed, _movement.y * MovementSpeed));
+        _rigidbody.AddForce(new Vector2(_movement.x * MovementSpeed, _movement.y * MovementSpeed));
         //Debug.Log(_rigidbody.velocity);
+
+
     }
 }

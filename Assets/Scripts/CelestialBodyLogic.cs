@@ -42,7 +42,7 @@ public class CelestialBodyLogic : MonoBehaviour
     [Header("ParticleSystems")]
     [SerializeField]
     private ParticleSystem _particleSystem;
-    private int _tolerance =2;
+    private int _tolerance =5;
     public int Tolerance => _tolerance;
 
 
@@ -338,7 +338,7 @@ public class CelestialBodyLogic : MonoBehaviour
 
 
 
-        if (logic.Type == CelestialBodyType.Astroid)
+        if (logic.Type == CelestialBodyType.Astroid) 
             AstroidCollisionLogic(gameObject, logic);
         else if (logic.Type == CelestialBodyType.Planet)
             PlanetCollisionLogic(gameObject, logic);

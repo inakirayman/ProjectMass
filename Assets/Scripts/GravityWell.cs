@@ -71,6 +71,12 @@ public class GravityWell : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         CelestialBodyLogic logic = collision.GetComponent<CelestialBodyLogic>();
+        if (logic == null)
+        {
+            Debug.Log(collision.name +"   " + collision.transform.position);
+            return;
+        }
+            
 
         if (_celestialBodyLogic.Type == CelestialBodyType.Astroid)
             return;
@@ -78,7 +84,7 @@ public class GravityWell : MonoBehaviour
         if (SolarObjects.Contains(collision.gameObject))
             return;
 
-        if (logic.IsOrbiting)
+        if (logic.IsOrbiting) 
             return;
         
         if(_celestialBodyLogic.Type == CelestialBodyType.Planet && !_celestialBodyLogic.IsOrbiting)

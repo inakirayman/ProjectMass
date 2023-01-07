@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EvolveHelper : MonoBehaviour
 {
-    public static int PlanetMass = 6;
-    public static int StarMass = 12;
-    public static int BlackHoleMass = 31;
+    public static int PlanetMass = 20;
+    public static int StarMass = 40;
+    public static int BlackHoleMass = 60;
 
 
 
