@@ -34,17 +34,13 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-        SpawnObjectsOutsideOfView(_listAstroids, MaxAstroids, _astroid);
-        SpawnObjectsOutsideOfView(_listPlanet, MaxPlanet, _planet);
-        SpawnObjectsOutsideOfView(_listStar, MaxStar, _star);
-
-
-
-
         CheckForDestroyedObjects(_listAstroids);
         CheckForDestroyedObjects(_listPlanet);
         CheckForDestroyedObjects(_listStar);
 
+        SpawnObjectsOutsideOfView(_listAstroids, MaxAstroids, _astroid);
+        SpawnObjectsOutsideOfView(_listPlanet, MaxPlanet, _planet);
+        SpawnObjectsOutsideOfView(_listStar, MaxStar, _star);
 
         CheckIfGameObjecetIsInsideBounds(_listAstroids);
         CheckIfGameObjecetIsInsideBounds(_listPlanet);

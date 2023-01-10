@@ -73,7 +73,7 @@ public class GravityWell : MonoBehaviour
         CelestialBodyLogic logic = collision.GetComponent<CelestialBodyLogic>();
         if (logic == null)
         {
-            Debug.Log(collision.name +"   " + collision.transform.position);
+            //Debug.Log(collision.name +"   " + collision.transform.position);
             return;
         }
             

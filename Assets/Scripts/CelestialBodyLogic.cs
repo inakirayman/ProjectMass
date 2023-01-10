@@ -52,6 +52,8 @@ public class CelestialBodyLogic : MonoBehaviour
 
     void Start()
     {
+        SetStartMass();
+
         _currentTime = Cooldown;
 
 
@@ -61,6 +63,26 @@ public class CelestialBodyLogic : MonoBehaviour
 
         _nextOrbitDistance = MinOrbitDistance;
 
+    }
+
+    private void SetStartMass()
+    {
+        if (Type == CelestialBodyType.Astroid)
+        {
+            Mass = 1;
+        }
+        else if (Type == CelestialBodyType.Planet)
+        {
+            Mass = EvolveHelper.PlanetMass;
+        }
+        else if (Type == CelestialBodyType.Star)
+        {
+            Mass = EvolveHelper.StarMass;
+        }
+        else if (Type == CelestialBodyType.Blackhole)
+        {
+            Mass = EvolveHelper.BlackHoleMass;
+        }
     }
 
     // Update is called once per frame
@@ -94,11 +116,11 @@ public class CelestialBodyLogic : MonoBehaviour
 
             if (IsPlayerControlled && Type != CelestialBodyType.Blackhole)
             {
-                if (Input.GetKeyDown(KeyCode.Space) && DoesSatellitesHaveSatellites() && Type == CelestialBodyType.Star)
+                if (Input.GetButtonDown("Jump") && DoesSatellitesHaveSatellites() && Type == CelestialBodyType.Star)
                 {
                     RequestSatelliteToAbsorbe();
                 }
-                else if (Input.GetKeyDown(KeyCode.Space))
+                else if (Input.GetButtonDown("Jump"))
                     AbsorbLightestSatellite();
             }
             else if (Type == CelestialBodyType.Blackhole)
